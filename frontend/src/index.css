@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --bg-a: #d5f4ff;
+  --bg-b: #f4ffdc;
+  --bg-c: #f8efff;
+  --text-main: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text-main);
+  background: radial-gradient(1200px 700px at 10% -20%, var(--bg-a), transparent 60%),
+    radial-gradient(1200px 700px at 100% 0%, var(--bg-c), transparent 60%),
+    linear-gradient(140deg, #ebfff7 0%, var(--bg-b) 40%, #f3f6ff 100%);
+}
+
+.bg-app {
+  position: relative;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 999px;
+  opacity: 0.35;
+  filter: blur(8px);
+  animation: drift 12s ease-in-out infinite alternate;
+}
+
+.orb-a {
+  top: -5rem;
+  left: -6rem;
+  background: #67e8f9;
+}
+
+.orb-b {
+  right: -7rem;
+  top: 16rem;
+  background: #a7f3d0;
+  animation-delay: 1.5s;
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  to {
+    transform: translateY(24px) translateX(12px) scale(1.06);
+  }
+}

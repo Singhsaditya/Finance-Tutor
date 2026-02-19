@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+google-genai
+faiss-cpu
+numpy
+python-dotenv
+langchain
+pydantic
+requests

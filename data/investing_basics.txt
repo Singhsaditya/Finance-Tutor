@@ -1,0 +1,203 @@
+Finance Knowledge Base for Vector Embeddings
+
+Section: Core Investment Concepts
+Investing means allocating capital today with the expectation of future return.
+Saving prioritizes capital preservation and liquidity, while investing accepts risk for growth.
+Risk is the uncertainty of outcomes; return is the gain or loss on an investment.
+Expected return is the probability weighted average outcome.
+Real return equals nominal return minus inflation.
+Compounding is earning return on both principal and prior returns over time.
+Time horizon is the expected holding period and strongly affects portfolio design.
+Risk tolerance is an investor's psychological and financial ability to bear volatility and loss.
+Risk capacity is the objective ability to take risk based on income stability, assets, and liabilities.
+Diversification reduces idiosyncratic risk by combining imperfectly correlated assets.
+Asset allocation is the long run mix among asset classes and is a major driver of outcomes.
+Rebalancing restores target weights and controls drift in risk exposure.
+Liquidity is the ability to convert an asset to cash quickly with minimal price impact.
+Volatility is the dispersion of returns, often measured by standard deviation.
+Drawdown is the decline from a portfolio peak to a trough.
+Margin of safety is buying below estimated intrinsic value to reduce valuation risk.
+
+Section: Asset Classes
+Cash and cash equivalents include treasury bills and money market instruments.
+Fixed income includes government, municipal, and corporate bonds.
+Equities represent ownership claims on company cash flows and residual value.
+Real estate includes direct property and listed vehicles such as REITs.
+Commodities include energy, metals, and agriculture and may hedge inflation shocks.
+Alternatives include private equity, private credit, hedge funds, infrastructure, and collectibles.
+Cryptocurrencies and digital assets are high volatility speculative assets with evolving regulation.
+
+Section: Equity Market Concepts
+Common stock holders have voting rights and residual claims after creditors.
+Preferred stock has fixed dividends and seniority over common equity.
+Market capitalization equals share price multiplied by shares outstanding.
+Large cap, mid cap, and small cap classify companies by market value.
+Growth stocks are priced for high future earnings growth.
+Value stocks trade at lower valuation multiples relative to fundamentals.
+Dividend yield is annual dividend per share divided by current price.
+Buybacks reduce share count and can increase earnings per share.
+Earnings per share equals net income minus preferred dividends divided by diluted shares.
+Price to earnings ratio compares price per share to earnings per share.
+Price to book ratio compares market value to accounting equity.
+Price to sales ratio compares market value to revenue.
+Enterprise value equals equity value plus net debt and other claims.
+EV/EBITDA is a capital structure neutral valuation multiple.
+Free cash flow is operating cash flow minus capital expenditures.
+Discounted cash flow valuation estimates present value of projected future cash flows.
+
+Section: Bond and Fixed Income Concepts
+A bond is a debt instrument with principal, coupon, and maturity.
+Coupon rate is the annual interest percentage paid on face value.
+Yield to maturity is the internal rate of return if held to maturity and coupons are reinvested.
+Current yield equals annual coupon divided by market price.
+Duration measures sensitivity of bond price to interest rate changes.
+Convexity adjusts duration for non linear price response at larger rate moves.
+Credit spread is the extra yield over a risk free benchmark for credit risk.
+Investment grade debt has lower default risk than high yield debt.
+Default risk is the possibility the issuer cannot meet debt obligations.
+Sovereign bonds are issued by national governments.
+Municipal bonds often offer tax advantages depending on jurisdiction.
+Inflation linked bonds adjust principal or coupons with inflation indices.
+Yield curve plots yields across maturities and signals growth and policy expectations.
+An inverted yield curve can indicate tighter financial conditions and recession risk.
+
+Section: Portfolio Theory and Risk Metrics
+Modern portfolio theory shows portfolio risk depends on covariance, not only individual volatility.
+Correlation ranges from minus one to plus one and measures co movement between assets.
+Beta measures asset sensitivity to broad market moves.
+Alpha is return above a risk adjusted benchmark expectation.
+Sharpe ratio equals excess return over risk free rate divided by volatility.
+Sortino ratio penalizes downside volatility rather than total volatility.
+Information ratio measures active return divided by tracking error.
+Tracking error is volatility of active return relative to benchmark.
+Value at Risk estimates potential loss at a confidence level over a horizon.
+Expected shortfall estimates average loss beyond the Value at Risk threshold.
+Stress testing evaluates outcomes under adverse hypothetical scenarios.
+Scenario analysis evaluates portfolio behavior under defined macro or market states.
+
+Section: Derivatives
+A derivative derives value from an underlying asset, index, or rate.
+Forward contracts are customized OTC agreements to buy or sell in the future.
+Futures are standardized exchange traded forwards with daily margining.
+Options give the right, not obligation, to buy (call) or sell (put) at a strike price.
+Option premium is the upfront price of the option contract.
+Intrinsic value is immediate exercise value; time value is the remainder of option price.
+Implied volatility is the market implied future volatility embedded in option prices.
+Greeks measure option sensitivity: delta, gamma, theta, vega, and rho.
+Swaps exchange cash flow streams, such as fixed for floating interest rates.
+Hedging uses derivatives to reduce unwanted risk exposures.
+Speculation uses derivatives to express directional or volatility views.
+Leverage amplifies gains and losses and increases risk of ruin.
+
+Section: Corporate Finance
+Corporations finance operations through equity, debt, and retained earnings.
+Cost of equity is investor required return for equity risk.
+Cost of debt is borrowing rate adjusted for tax shield.
+Weighted average cost of capital combines cost of equity and after tax cost of debt.
+Capital budgeting evaluates investment projects using NPV, IRR, and payback.
+Net present value is present value of cash inflows minus outflows.
+Internal rate of return is the discount rate that sets NPV to zero.
+Positive NPV projects should create shareholder value if assumptions hold.
+Working capital equals current assets minus current liabilities.
+Cash conversion cycle measures days inventory plus receivables minus payables days.
+Mergers and acquisitions can create synergies but also integration and valuation risk.
+Capital structure decisions balance tax benefits of debt against distress risk.
+
+Section: Accounting and Financial Statements
+Income statement reports revenue, expenses, and profit over a period.
+Balance sheet reports assets, liabilities, and equity at a point in time.
+Cash flow statement reports operating, investing, and financing cash movements.
+Revenue recognition timing affects earnings quality.
+Accrual accounting can diverge from cash generation.
+Depreciation allocates cost of tangible assets over useful life.
+Amortization allocates cost of intangible assets over useful life.
+Gross margin equals gross profit divided by revenue.
+Operating margin equals operating income divided by revenue.
+Net margin equals net income divided by revenue.
+Return on equity equals net income divided by average shareholders equity.
+Return on invested capital measures operating profitability relative to invested capital.
+Leverage ratios include debt to equity and debt to EBITDA.
+Coverage ratios include interest coverage and fixed charge coverage.
+
+Section: Macroeconomics and Policy
+Gross domestic product measures aggregate economic output.
+Inflation is sustained increase in general price level.
+Consumer price index and personal consumption expenditures are common inflation measures.
+Unemployment rate measures share of labor force without work but seeking employment.
+Central banks set policy rates and manage liquidity to meet inflation and employment mandates.
+Monetary tightening raises rates to cool demand and inflation pressure.
+Monetary easing lowers rates or expands balance sheet to support growth and credit.
+Fiscal policy uses government spending and taxation to influence economic activity.
+Business cycles include expansion, peak, contraction, and trough phases.
+Leading indicators can signal future economic momentum changes.
+Real interest rate equals nominal rate minus expected inflation.
+Currency appreciation can reduce export competitiveness but lower import costs.
+
+Section: Market Microstructure and Trading
+Bid is highest buyer price; ask is lowest seller price.
+Bid ask spread is a key transaction cost and liquidity indicator.
+Order book shows resting buy and sell orders at different price levels.
+Market orders prioritize execution; limit orders prioritize price.
+Slippage is the difference between expected and realized execution price.
+Market impact is price movement caused by executing a trade.
+Algorithmic execution methods include TWAP, VWAP, and participation strategies.
+Settlement is final transfer of cash and securities after trade date.
+Counterparty risk is the risk the other party fails to perform.
+
+Section: Personal Finance and Planning
+Budgeting aligns spending with income, goals, and constraints.
+Emergency funds provide liquidity for unexpected expenses.
+Debt management prioritizes high interest debt reduction.
+Credit score affects borrowing costs and credit access.
+Insurance transfers specific risks in exchange for premiums.
+Retirement planning uses expected expenses, longevity, and savings rate assumptions.
+Tax planning improves after tax returns through account selection and timing.
+Goal based investing aligns portfolios to specific liabilities and timelines.
+
+Section: Behavioral Finance
+Loss aversion means losses feel larger than equivalent gains.
+Overconfidence can lead to excessive trading and concentration.
+Anchoring biases decisions toward initial reference points.
+Recency bias overweights recent events and underweights long run evidence.
+Herd behavior can amplify bubbles and crashes.
+Confirmation bias favors information that supports existing beliefs.
+A disciplined process and pre committed rules reduce behavioral errors.
+
+Section: Risk Management and Governance
+Risk management identifies, measures, monitors, and mitigates risks.
+Major risk types include market, credit, liquidity, operational, legal, and model risk.
+Position limits and stop loss policies constrain portfolio level losses.
+Independent risk oversight improves governance and accountability.
+Model validation and backtesting assess model reliability.
+Compliance ensures adherence to laws, regulations, and internal policies.
+Know your customer and anti money laundering controls reduce financial crime risk.
+
+Section: ESG and Sustainable Finance
+Environmental factors include emissions, energy use, and climate risk exposure.
+Social factors include labor standards, community impact, and customer welfare.
+Governance factors include board quality, incentives, and shareholder rights.
+Sustainable investing approaches include exclusion, integration, thematic, and impact investing.
+Green bonds finance projects with environmental objectives.
+Transition risk and physical risk are key climate finance dimensions.
+
+Section: Fintech and Digital Finance
+Fintech applies technology to payments, lending, wealth management, and insurance.
+Digital wallets and real time payments improve transaction speed and user experience.
+Open banking enables secure data sharing through APIs with customer consent.
+Tokenization represents real world assets as programmable digital tokens.
+Smart contracts automate execution based on predefined conditions.
+Cybersecurity is essential due to data sensitivity and operational concentration.
+
+Section: Benchmarking and Performance Attribution
+A benchmark is a reference portfolio used to evaluate performance.
+Absolute return is total return without benchmark comparison.
+Relative return is performance versus benchmark.
+Attribution decomposes return into allocation, selection, and interaction effects.
+Brinson attribution is common for multi asset and equity portfolios.
+Fees, taxes, and turnover materially affect net investor outcomes.
+
+Section: Common Learning Map
+Beginner topics: budgeting, saving, compounding, diversification, inflation, and basic asset classes.
+Intermediate topics: valuation multiples, bond duration, asset allocation, and risk adjusted metrics.
+Advanced topics: derivatives Greeks, factor investing, credit analysis, and macro regime allocation.
+Professional topics: portfolio construction under constraints, stress testing, and governance frameworks.
