@@ -1,0 +1,45 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build backend
+      run: docker build -t alok1003/fastapi ./backend
+
+    - name: Build frontend
+      run: docker build -t alok1003/react ./frontend
+
+    - name: Login Docker
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+    - name: Push images
+      run: |
+        docker push alok1003/fastapi
+        docker push alok1003/react
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v0.1.6
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_KEY }}
+        script: |
+          docker pull alok1003/fastapi
+          docker pull alok1003/react
+
+          docker stop backend || true
+          docker rm backend || true
+          docker stop frontend || true
+          docker rm frontend || true
+
+          docker run -d -p 8000:8000 --name backend alok1003/fastapi
+          docker run -d -p 3000:80 --name frontend alok1003/react

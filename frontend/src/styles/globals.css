@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ────────────────────────────────────────────────────────── */
+
+:root {
+  --color-brand: #0ea5e9;
+  --color-accent: #d946ef;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --surface-1: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-3: #f1f5f9;
+  --border: rgba(0, 0, 0, 0.08);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.dark {
+  --surface-1: #0f1117;
+  --surface-2: #161b27;
+  --surface-3: #1e2535;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Base Styles ───────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--surface-1);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ────────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 9999px;
+}
+
+/* ─── Glassmorphism ─────────────────────────────────────────────────────────── */
+
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.dark .glass-card {
+  background: rgba(30, 37, 53, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Gradient Text ─────────────────────────────────────────────────────────── */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-brand), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Shimmer Loader ────────────────────────────────────────────────────────── */
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface-3) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    var(--surface-3) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(
+    90deg,
+    #1e2535 25%,
+    rgba(255, 255, 255, 0.04) 50%,
+    #1e2535 75%
+  );
+  background-size: 200% 100%;
+}
+
+/* ─── Noise Texture Overlay ─────────────────────────────────────────────────── */
+
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* ─── Focus Styles ──────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ─── Animated Gradient Background ──────────────────────────────────────────── */
+
+.hero-bg {
+  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(14, 165, 233, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(217, 70, 239, 0.1), transparent),
+    radial-gradient(ellipse 60% 40% at 20% 60%, rgba(16, 185, 129, 0.08), transparent);
+}
+
+.dark .hero-bg {
+  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(14, 165, 233, 0.2), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(217, 70, 239, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 20% 60%, rgba(16, 185, 129, 0.1), transparent);
+}
+
+/* ─── Prose Answer Formatting ───────────────────────────────────────────────── */
+
+.answer-prose {
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.answer-prose p { margin-bottom: 0.75rem; }
+.answer-prose code {
+  background: var(--surface-3);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+.dark .answer-prose code {
+  background: rgba(255,255,255,0.08);
+}
+
+.answer-prose pre {
+  background: var(--surface-3);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+/* ─── Sidebar ───────────────────────────────────────────────────────────────── */
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200;
+  color: var(--text-secondary);
+}
+
+.sidebar-link:hover {
+  background: var(--surface-3);
+  color: var(--text-primary);
+}
+
+.sidebar-link.active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(217, 70, 239, 0.1));
+  color: var(--color-brand);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+/* ─── Button Base ───────────────────────────────────────────────────────────── */
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-200;
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-200;
+  background: var(--surface-3);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-2);
+  transform: translateY(-1px);
+}
+
+/* ─── Card Base ─────────────────────────────────────────────────────────────── */
+
+.card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ─── Input Base ────────────────────────────────────────────────────────────── */
+
+.input-base {
+  @apply w-full px-4 py-3 rounded-xl text-sm transition-all duration-200;
+  background: var(--surface-1);
+  border: 1.5px solid var(--border);
+  color: var(--text-primary);
+}
+
+.input-base:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.input-base::placeholder {
+  color: var(--text-tertiary);
+}

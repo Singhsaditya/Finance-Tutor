@@ -7,3 +7,7 @@ python-dotenv
 langchain
 pydantic
 requests
+cairosvg
+pymongo
+python-jose
+email-validator
